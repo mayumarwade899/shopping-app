@@ -25,13 +25,13 @@ const Hero = () => {
         },
         {
             id: 2,
-            img: "/banner3.jpeg",
+            img: "/banner2.jpg",
             title: "New Arrivals",
             mainTitle: "WOMENS ETHNIC FASHION"
         },
         {
             id: 3,
-            img: "/banner4.jpeg",
+            img: "/banner3.jpg",
             title: "MID SEASON SALE",
             mainTitle: "FOOTWEAR & ACCESSORIES"
         }
