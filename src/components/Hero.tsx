@@ -6,7 +6,7 @@ import Slide from './Slide';
 
 const Hero = () => {
 
-    var settings = {
+    const settings = {
         dots: true,
         infinite: true,
         slidesToShow: 1,
@@ -19,21 +19,24 @@ const Hero = () => {
     const slideData = [
         {
             id: 0,
-            img: "/banner1.jpg",
+            img: "/banner-1.webp",
             title: "Trending Fashion",
-            mainTitle: "TRENDY FASHION",
+            mainTitle: "WOMEN'S LATEST FASHION SALE",
+            price: "$20"
         },
         {
             id: 2,
-            img: "/banner2.jpg",
-            title: "New Arrivals",
-            mainTitle: "WOMENS ETHNIC FASHION"
+            img: "/banner-2.webp",
+            title: "Trending Accessories",
+            mainTitle: "MODERN SUNGLASSES",
+            price: "$10"
         },
         {
             id: 3,
-            img: "/banner3.jpg",
+            img: "/banner-3.webp",
             title: "MID SEASON SALE",
-            mainTitle: "FOOTWEAR & ACCESSORIES"
+            mainTitle: "NEW FASHION SUMMER SALE",
+            price: "$30"
         }
     ]
 
@@ -45,6 +48,9 @@ const Hero = () => {
                 <Slide 
                     key={item.id}
                     img={item.img}
+                    title={item.title}
+                    mainTitle={item.mainTitle}
+                    price={item.price}
                 />
             ))}
         </Slider>
@@ -54,3 +60,4 @@ const Hero = () => {
 }
 
 export default Hero
+
